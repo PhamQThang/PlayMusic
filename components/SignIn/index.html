@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chia sẻ nhạc - Đăng nhập và Đăng ký</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+ <div class="main">
+    <div class="container">
+      <div class="logo">
+        <img src="/assest/img/logo.jpg" alt="Logo">
+      </div>
+      <div class="form-container">
+        
+        <form id="login-container">
+          <h2>Đăng nhập</h2>
+          <input type="text" placeholder="Tên đăng nhập" id="login-username" required>
+          <input type="password" placeholder="Mật khẩu" id="login-password" required>
+          
+          <button  type="submit">Đăng nhập</button>
+          <p class="form-info">Chưa có tài khoản? <a href="#" id="switch-to-register">Đăng ký</a></p>
+        </form>
+      </div>
+      <div class="form-container hidden" id="register-container">
+        <h2>Đăng ký</h2>
+        <form id="register-container">
+          <input type="text" placeholder="Tên đăng nhập" id="register-username" required>
+          <input type="email" placeholder="Email" id="register-email" required>
+          <input type="password" placeholder="Mật khẩu" id="register-password" required>
+          <button type="submit">Đăng ký</button>
+          <p class="form-info">Đã có tài khoản? <a href="#" id="switch-to-login">Đăng nhập</a></p>
+        </form>
+        
+      </div>
+    </div>
+ </div>
+  
+  <script src="index.js"></script>
+</body>
+</html>

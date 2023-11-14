@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .main{
+    background: linear-gradient(to right,#ea7bf8cf,#ddb9eb4d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+
+    width: 400px;
+    padding: 20px;
+    background: linear-gradient(to right,#6bbeeecf,#d898ef4d);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: rotate 4s linear infinite;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+  
+  form input:focus {
+    border-color: #d31e5a;
+  }
+  
+  form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #dd1489;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #dd12bb;
+  }
+  
+  .form-info {
+    text-align: center;
+    color: #777;
+    margin-top: 10px;
+  }
+  
+  .form-info a {
+    color: #e017b5;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .hidden {
+    display: none;
+  }

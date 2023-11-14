@@ -1,0 +1,145 @@
+/* -------------------Wrapper----------------------- */
+
+
+
+/* -------------------Section----------------------- */
+.section {
+    margin: 48px 0 12px;
+  }
+  
+  .section-header {
+    font-size: 22px;
+    margin: 0 16px 12px 16px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .section-add-lib {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-input-wrap {
+    margin-right: 15px;
+    flex: 1;
+  }
+  
+  .section-input-lib {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .section-add-lib-btn {
+    background-color: rgb(104, 6, 119);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .section-add-lib-btn:hover {
+    background-color: #6c13ab;
+  }
+  
+  .section-album-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  
+  .section-album-item {
+    width: 25%;
+    padding: 2px 16px;
+    box-sizing: border-box;
+  }
+  
+  .section-album-card {}
+  
+  .section-item-img {
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  .section-album-text {
+    color: #cacaca;
+    font-size: 16px;
+    margin-top: 8px;
+    text-align: center;
+  }
+  
+  .section-type-music-list {
+    display: flex;
+    margin-left: 16px;
+  }
+  
+  .section-type-music-item {
+    padding: 4px 24px;
+    border: 1px solid var(--boder-primary);
+    border-radius: 100px;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-right: 15px;
+}
+
+/* -------------------Muscic----------------------- */
+.music-frame{
+    padding: 0 16px;
+    margin: 4px 0;
+    width: 50%;
+    min-width: 400px;
+    flex: 1;
+}
+
+
+/* -------------------Album----------------------- */
+.section-album-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .section-album-item {
+    width: 25%;
+    padding: 2px 16px;
+    box-sizing: border-box; /* Bổ sung để tính cả padding và border vào kích thước */
+  }
+  
+  .section-album-card {}
+  
+  .section-item-img {
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  .section-album-text {
+    color: #cacaca;
+    font-size: 16px;
+    margin-top: 8px; /* Thêm khoảng cách giữa hình ảnh và văn bản */
+    text-align: center;
+  }
+
+/* tablet */
+@media (max-width: 1024px) and (min-width: 744px){
+    .section-album-item {
+        width: 33.333%;
+      }
+}
+/* mobile */
+@media (max-width: 743px){
+
+    /* album */
+    .section-album-item{
+        width: 50%;
+    }
+}

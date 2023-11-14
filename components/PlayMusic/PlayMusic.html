@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assest/font/forn_icon/themify-icons/themify-icons.css">
-    <link rel="stylesheet" href="./Global.css">
-    <link rel="stylesheet" href="./HomePage.css">
-    <title>Document</title>
+    <title>Play Music</title>
+    <link rel="stylesheet" href="/assest/font/forn_icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./PlayMusic.css">
+    <link rel="stylesheet" href="/public/Global.css">
 </head>
 <body>
     <div class="main">
@@ -31,6 +31,7 @@
             <div class="sidebar">
                 <ul class="sidebar-list">
                     <li class="sidebar-item" >
+                        <a class="link" href="/index.html">
                             <i class="ti-home sidebar-item-child"></i>
                             <h2 class="sidebar-item-child text-sidebar-item">Khám phá</h2>
                         </a>
@@ -58,28 +59,55 @@
 
             <div class="content">
                 <div class="content-bg">
-                    <div class="banner-list">
-                        <div class="banner-item">
-                            <img src="/assest/img/banner-1.jpg" alt="Logo-Banner" class="banner-img">
-                        </div>
-                        <div class="banner-item">
-                            <img src="/assest/img/banner-2.jpg" alt="Logo-Banner" class="banner-img">
-                        </div>
-                        <div class="banner-item">
-                            <img src="/assest/img/banner-3.jpg" alt="Logo-Banner" class="banner-img">
-                        </div>
-                    </div>
-
                     <div class="content-main">
-                        <div class="section">
-                            <h3 class="section-header">Mới phát hành</h3>
-                            <div class="section-type-music-list">
-                                <div class="section-type-music-item active">Tất Cả</div>
-                                <div class="section-type-music-item">Việt Nam</div>
-                                <div class="section-type-music-item">Trung Quốc</div>
-                                <div class="section-type-music-item">Âu Mỹ</div>
+                        <div class="content-music">
+                            <div class="music-section">
+                                <div class="music-section-infor">
+                                    <div class="music-section-now">Bài hát đang phát :</div>
+                                    <div class="music-section-song">Thằng điên</div>
+                                    <div class="music-section-author">Justatee x Phương Ly</div>
+                                </div>
+                                <div class="music-section-frame-img">
+                                    <img src="/assest/img/banner-1.jpg" alt="Thằng điên" class="music-section-img">
+                                    <img src="/assest/img/thang-dien.jpg" alt="Thằng điên" class="music-section-img-drop">
+                                </div>
+                            </div>
+        
+                            <div class="music-track">
+                                <input type="range" name="playing" class="music-track-progress" value="0" min="0" step="1" max="100">
+                                <div class="music-loader1"></div>
+                            </div>
+                
+                            <div class="music-time">
+                                <span class="music-curtime" ></span>
+                                <span class="music-sumtime" ></span>
+                            </div>
+        
+                            <div class="music-control">
+                                <div class="item music-control-add">
+                                    <i title="repeat" class="ti-share"></i>
+                                </div>
+                                <div class="music-control-menu">
+                                    <div class="item music-control-back-btn">
+                                        <i class="ti-control-skip-backward"></i>
+                                    </div>
+            
+                                    <div class="item music-control-play-pause">
+                                        <i class="ti-control-play"></i>
+                                        <!-- <i class="ti-control-pause"></i> -->
+                                    </div>
+            
+                                    <div class="item music-control-next-btn">
+                                        <i class="ti-control-skip-forward"></i>
+                                    </div>
+                                </div>
+        
+                                <div class="item music-control-shuffle">
+                                    <i title="shuffle" class="ti-control-shuffle"></i>
+                                </div>
                             </div>
                         </div>
+                        <!-- list-music -->
     
                         <div class="list-music">
                             <div class="music-frame">
@@ -88,7 +116,7 @@
                                         <img src="/assest/img/thang-dien.jpg" alt="Thằng điên" class="music-logo-img">
                                     </div>
                                     <div class="music-desc">
-                                        <h1 class="music-name">Em Của Ngày Hôm Qua Em C</h1>
+                                        <h1 class="music-name">Thằng điên</h1>
                                         <p class="music-author">Justatee x Phương Ly</p>
                                     </div>
                                 </div>
@@ -104,7 +132,8 @@
                                         <p class="music-author">Justatee x Phương Ly</p>
                                     </div>
                                 </div>
-                            </div><div class="music-frame">
+                            </div>
+                            <div class="music-frame">
                                 <div class="music-banner">
                                     <div class="music-logo">
                                         <img src="/assest/img/thang-dien.jpg" alt="Thằng điên" class="music-logo-img">
@@ -217,82 +246,12 @@
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="section">
-                            <h3 class="section-header">Nhạc Tâm Trạng</h3>
-                            <div class="section-album-list">
-                                <div class="section-album-item">
-                                    <div class="section-album-card">
-                                        <img src="/assest/img/card-1.jpg" alt="Logo-Card" class="section-item-img">
-                                    </div>
-                                    <div class="section-album-text">Người đừng lặng im đến thế</div>
-                                </div>
 
-                                <div class="section-album-item">
-                                    <div class="section-album-card">
-                                        <img src="/assest/img/card-2.jpg" alt="Logo-Card" class="section-item-img">
-                                    </div>
-                                    <div class="section-album-text">Tình yêu thầm lặng</div>
-                                </div>
-
-                                <div class="section-album-item">
-                                    <div class="section-album-card">
-                                        <img src="/assest/img/card-3.jpg" alt="Logo-Card" class="section-item-img">
-                                    </div>
-                                    <div class="section-album-text">Nỗi nhớ là một đóa hoa</div>
-
-                                </div>
-
-                                <div class="section-album-item">
-                                    <div class="section-album-card">
-                                        <img src="/assest/img/card-4.jpg" alt="Logo-Card" class="section-item-img">
-                                    </div>
-                                    <div class="section-album-text">Nơi nào bình yên</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="section">
-                            <h3 class="section-header">Nhạc Remix</h3>
-                            <div class="section-album-list">
-                                <div class="section-album-item">
-                                    <div class="section-album-card">
-                                        <img src="/assest/img/card-5.jpg" alt="Logo-Card" class="section-item-img">
-                                    </div>
-                                    <div class="section-album-text">Lê Bảo Bình, Quân A.P, Yến Tattoo,...</div>
-                                </div>
-
-                                <div class="section-album-item">
-                                    <div class="section-album-card">
-                                        <img src="/assest/img/card-6.jpg" alt="Logo-Card" class="section-item-img">
-                                    </div>
-                                    <div class="section-album-text">Lê Bảo Bình, Quân A.P, Yến Tattoo,...</div>
-                                </div>
-
-                                <div class="section-album-item">
-                                    <div class="section-album-card">
-                                        <img src="/assest/img/card-7.jpg" alt="Logo-Card" class="section-item-img">
-                                    </div>
-                                    <div class="section-album-text">Lê Bảo Bình, Quân A.P, Yến Tattoo,...</div>
-
-                                </div>
-
-                                <div class="section-album-item">
-                                    <div class="section-album-card">
-                                        <img src="/assest/img/card-8.jpg" alt="Logo-Card" class="section-item-img">
-                                    </div>
-                                    <div class="section-album-text">Lê Bảo Bình, Quân A.P, Yến Tattoo,...</div>
-                                </div>
-                            </div>
-                        </div>
+                       
                     </div>
-
-                        
                 </div>
             </div>
         </div>
-
-        
     </div>
 </body>
 </html>

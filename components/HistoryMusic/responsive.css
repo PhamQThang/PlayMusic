@@ -1,0 +1,16 @@
+@media (max-width: 1308px) and (min-width: 1025px){
+
+}
+
+
+/* tablet */
+@media (max-width: 1024px) and (min-width: 744px){
+
+}
+
+/* mobile */
+@media (max-width: 743px){
+    .music-coundown-time{
+        font-size: 10px;
+    }
+}
