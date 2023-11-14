@@ -436,7 +436,7 @@ body{
 
     .sidebar-item{
         padding: 0;
-        margin: 2px;
+        margin: 0;
     }
 
     .sidebar-item-child{
@@ -445,7 +445,7 @@ body{
     }
     .link{
         line-height: 6px;
-        padding: 6px 6px;
+        padding: 6px 5px;
     }
     /* ---------------- */
 
